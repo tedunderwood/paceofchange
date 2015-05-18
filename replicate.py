@@ -37,7 +37,7 @@ if command == 'full':
     sourcefolder = 'poems/'
     extension = '.poe.tsv'
     classpath = 'poemeta.csv'
-    outputpath = 'weirdpredictions.csv'
+    outputpath = 'mainmodelpredictions.csv'
 
     ## EXCLUSIONS.
 
