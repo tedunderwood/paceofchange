@@ -16,3 +16,14 @@ But this is not a project that promised to build portable tools, and you won't f
 code
 ----
 
+The important modules are
+
+**replicate.py**
+**parallel_crossvalidate.py**
+**metafilter.py**
+**modelingprocess.py**
+
+**Replicate.py** translates a command-line option (like *halves*) into a set of parameters which it passes to **parallel_crossvalidate.py.** This module loads data, calls **metafilter** to load metadata, and figures out which volumes have to be excluded from each crossvalidation pass. Then it starts a multiprocessing pool, which calls **modelingprocess* to create each model in a leave-one-out crossvalidation scheme.
+
+The most fragile part of this is probably the multiprocessing. The code could be rewritten to be single-threaded.
+
