@@ -156,10 +156,10 @@ elif command == 'nations':
 
     ## PATHS.
 
-    sourcefolder = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/texts/'
+    sourcefolder = 'poems/'
     extension = '.poe.tsv'
-    classpath = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/finalpoemeta.csv'
-    outputpath = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/nationalpredictions.csv'
+    classpath = 'poemeta.csv'
+    outputpath = 'nationalpredictions.csv'
 
     ## EXCLUSIONS.
 
@@ -217,10 +217,10 @@ elif command == 'genders':
 
     ## PATHS.
 
-    sourcefolder = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/texts/'
+    sourcefolder = 'poems/'
     extension = '.poe.tsv'
-    classpath = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/finalpoemeta.csv'
-    outputpath = '/Users/tunder/Dropbox/GenreProject/python/reception/poetry/nationalpredictions.csv'
+    classpath = 'poemeta.csv'
+    outputpath = 'nationalpredictions.csv'
 
     ## EXCLUSIONS.
 
