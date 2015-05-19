@@ -23,7 +23,7 @@ The important modules are
 - **metafilter.py**
 - **modelingprocess.py**
 
-**Replicate.py** translates a command-line option (like *halves*) into a set of parameters which it passes to **parallel_crossvalidate.py.** This module loads data, calls **metafilter** to load metadata, and figures out which volumes have to be excluded from each crossvalidation pass. Then it starts a multiprocessing pool, which calls **modelingprocess* to create each model in a leave-one-out crossvalidation scheme.
+**Replicate.py** translates a command-line option (like *halves*) into a set of parameters which it passes to **parallel_crossvalidate.py.** This module loads data, calls **metafilter** to load metadata, and figures out which volumes have to be excluded from each crossvalidation pass. Then it starts a multiprocessing pool, which calls **modelingprocess** to create each model in a leave-one-out crossvalidation scheme.
 
 The most fragile part of this is probably the multiprocessing. We ran this so often that we needed to parallelize the process, but if that's not necessary you could set processes=1 in line 369 of parallel_crossvalidate.py. Or, if you have more than 4 cores available, you could increase the setting.
 
