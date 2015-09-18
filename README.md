@@ -1,7 +1,7 @@
 paceofchange
 ============
 
-Code, data, and metadata to support replication of the results in "How quickly do literary standards change?"
+Code, data, and metadata to support replication of the results in ["How quickly do literary standards change?"](http://figshare.com/articles/How_Quickly_Do_Literary_Standards_Change_/1418394)
 
 If you have Python 3 with numpy, pandas and scikit-learn, you should be able to clone this repo and then run replicate.py. Different forms of analysis can be provided to replicate.py as command-line arguments. For instance,
 
